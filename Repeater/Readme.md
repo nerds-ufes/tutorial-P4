@@ -14,7 +14,7 @@ Use:
 
 ## To run your program
 
-```json
+```c
   sudo p4run
 ```
 
