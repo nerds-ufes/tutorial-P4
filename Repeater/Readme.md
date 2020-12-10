@@ -12,3 +12,9 @@ Use:
 
 * **cli_script** to define the commands that are going to be executed in mininet.
 
+## To run your program
+
+```json
+  sudo p4run
+```
+
