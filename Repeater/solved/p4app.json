@@ -9,7 +9,6 @@
     "module_name": "p4utils.mininetlib.apptopo",
     "object_name": "AppTopo"
   },
-  "controller_module": null,
   "topodb_module": {
     "module_name": "p4utils.utils.topology",
     "object_name": "Topology"
