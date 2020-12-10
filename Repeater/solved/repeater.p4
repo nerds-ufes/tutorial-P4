@@ -77,9 +77,9 @@ control MyIngress(inout headers hdr,
         if(standard_metadata.ingress_port == 1){
             standard_metadata.egress_spec == 2;
         }
-        if(standard_metadata.ingress_port == 2){
-            standard_metadata.egress_spec == 1;
-        }    
+        else    if(standard_metadata.ingress_port == 2){
+                standard_metadata.egress_spec == 1;
+                }    
     }
 }
 
