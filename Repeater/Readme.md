@@ -10,7 +10,7 @@ Use:
 
 * **repeater.p4** to define your p4 program;
 
-* **cli_script** to define the commands that are going to be executed in mininet.
+* **cli_script** to define the commands that are going to be executed inside mininet.
 
 ## To run your program
 
