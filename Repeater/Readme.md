@@ -1,6 +1,6 @@
 Repeater
 
-For this example you have to create a topology with two hosts connected via 1 switch (the target for your p4 program). Your objective is to connect both hosts.
+For this example you have to create a topology with two hosts connected via one switch (the target of your p4 program). Your objective is to connect both hosts.
 
 The base p4app.json, repeater.p4 and cli_script are provided.  
 
