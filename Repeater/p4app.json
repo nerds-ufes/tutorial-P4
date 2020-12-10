@@ -21,9 +21,6 @@
     "module_name": "p4utils.mininetlib.p4net",
     "object_name": "P4Mininet"
   },
-  "topology": {
-    "links": [],
-    "hosts": {},
-    "switches": {}
-  }
+  "assignment_strategy": "",
+  "topology": {}
 }
