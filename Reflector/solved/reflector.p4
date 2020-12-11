@@ -28,10 +28,13 @@ struct headers {
 
 parser MyParser(packet_in packet, out headers hdr, inout metadata meta, inout standard_metadata_t standard_metadata) {
 
-      state start{
-  	        packet.extract(hdr.ethernet);
-            transition accept;
-      }
+	state start{
+		transition parse_ethernet;
+	}
+	parser parse_ethernet{
+		packet.extract(hdr.ethernet);
+		transition accept;
+	}
 
 }
 
