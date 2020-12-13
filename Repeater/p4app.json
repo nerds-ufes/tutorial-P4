@@ -28,7 +28,6 @@
       },
       "switches": {
         "s1": {
-          "program": "repeater.p4"
         }
     }
   
