@@ -18,5 +18,19 @@
     "object_name": "P4Mininet"
   },
   "assignment_strategy": "",
-  "topology": {}
+  "topology": {
+    "links": [["h1", "s1"], ["h2", "s1"]],
+      "hosts": {
+        "h1": {
+        },
+        "h2": {
+        }
+      },
+      "switches": {
+        "s1": {
+          "program": "repeater.p4"
+        }
+    }
+  
+  }
 }
