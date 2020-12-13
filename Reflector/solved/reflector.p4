@@ -31,7 +31,7 @@ parser MyParser(packet_in packet, out headers hdr, inout metadata meta, inout st
 	state start{
 		transition parse_ethernet;
 	}
-	parser parse_ethernet{
+	state parse_ethernet{
 		packet.extract(hdr.ethernet);
 		transition accept;
 	}
