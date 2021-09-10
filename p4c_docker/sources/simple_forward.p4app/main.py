@@ -54,6 +54,7 @@ def config_network():
     sw.command("table_set_default ipv4_lpm drop")
     sw.command("table_add ipv4_lpm ipv4_forward 10.0.0.1/32 => 00:00:0a:00:01:01 1")
     sw.command("table_add ipv4_lpm ipv4_forward 10.0.0.2/32 => 00:00:00:00:02:02 2")
+    sw.command("table_add ipv4_lpm ipv4_forward 10.0.0.3/32 => 00:00:00:00:03:03 3")
 
     #   eth0     1  2     eth0  
     # |h1|-------|s1|-------|h2|
@@ -73,7 +74,6 @@ def main():
     print "Starting experiment"
     h1 = net.get("h1")
     h2 = net.get("h2")
-    h2 = net.get("h3")
     
     print ("Please wait until the experiment is complete...")
     CLI(net)

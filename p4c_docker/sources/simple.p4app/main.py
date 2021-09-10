@@ -42,7 +42,7 @@ def config_network():
 
     program = "simple.p4"
 
-    topo = LinearTopo(3)
+    topo = LinearTopo(2)
     link = custom(TCLink, bw=10)
     net = P4Mininet(program=program, topo=topo, link=link)
     net.start()
@@ -73,7 +73,7 @@ def main():
     print "Starting experiment"
     h1 = net.get("h1")
     h2 = net.get("h2")
-    h2 = net.get("h3")
+    #h2 = net.get("h3")
     
     print ("Please wait until the experiment is complete...")
     CLI(net)
